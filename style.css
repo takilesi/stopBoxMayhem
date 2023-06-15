@@ -1,0 +1,234 @@
+@keyframes jogging {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+  }
+.moving-box {
+    border: solid green;
+    animation: jogging 5s ease-in-out infinite;
+}
+
+
+@keyframes joggingBack {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+.moving-box-return {
+    border: solid green;
+    animation: joggingBack 10s ease-in-out infinite;
+}
+#right{
+    float: right; 
+}
+
+
+@keyframes joggingDown {
+    0% {
+        transform: translateY(0vw); 
+    }
+    100% {
+        transform: translateY(100vw);
+    }
+}
+.moving-box-down {
+    border: solid green;
+    animation: joggingDown 5s ease-in-out infinite;
+}
+
+
+@keyframes joggingUp {
+    0% {
+        transform: translateY(0vw); 
+    }
+    100% {
+        transform: translateY(-100vw);
+    }
+}
+.moving-boxUp {
+    border: solid green;
+    animation: joggingUp 5s ease-in-out infinite;
+}
+#bottom{
+    position: absolute; 
+    bottom: 2%;  
+}
+.still-box1,.still-box3 {
+    border: solid red;
+    height: 100%;
+    width: 10%; 
+}
+.still-box2 {
+    border: solid red;
+    height: 10%;
+    width: 100%; 
+}
+.still-box4{
+    border: solid red;
+    height: 10%;
+    width: 10%; 
+}
+/* style boxes  */
+.move-box{
+
+    width: 100%;
+    height: 100%; 
+}
+
+
+
+
+
+.flexContainer {
+    border: solid black; 
+    display: flex; 
+    justify-content: space-evenly;
+    height: 96vh; 
+    background-color: solid white; 
+}
+.vertBox {
+    background-color:solid white; 
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex;
+    border: solid green;
+    flex-direction: column;
+    align-content: space-between;
+    width: 10%;
+}
+.vertBoxCenter {
+    background-color:solid white; 
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex;
+    border: solid green;
+    flex-direction: column;
+    align-content: space-between;
+    width: 80%;
+}
+.boxCenter {
+    margin: 0px; 
+    background-color:solid white; 
+    border: solid blue; 
+    border-width: 1px;
+    box-sizing: border-box;
+    display: block; 
+    text-align: center;
+    position: relative; 
+    height: 80%; 
+}
+.box {
+    margin: 0px; 
+    background-color:solid white; 
+    border: solid blue; 
+    border-width: 1px;
+    box-sizing: border-box;
+    display: block; 
+    text-align: center;
+    position: relative; 
+    height: 10%;
+}
+
+/* blink css -------------------------- */
+/* borrowed from  */
+/* https://www.freecodecamp.org/news/make-it-blink-html-tutorial-how-to-use-the-blink-tag-with-code-examples/ */
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.flash {
+    animation: blink 1s steps(1, end) infinite;
+}
+
+#containerFlash{
+    
+}
+/* stopwatch css ---------------------- */
+
+.boxCenter {
+    padding: 0;
+    margin: 0;
+    font-family: verdana;
+}
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 61, 0);
+}
+
+h1 {
+    color: rgb(10, 238, 10);
+    text-align: center;
+}
+ 
+.digit {
+    font-size: 50px;
+    color: #fff;
+}
+ 
+.txt {
+    font-size: 30px;
+    color: #fffcd6;
+}
+ 
+#buttons {
+    margin-top: 50px;
+}
+ 
+.btn {
+    width: 100px;
+    padding: 10px 15px;
+    margin: 0px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s;
+    color: white;
+    font-weight: 500;
+}
+ 
+#start {
+    background-color: #009779;
+}
+ 
+#stop {
+    background-color: #0e85fc;
+     
+}
+ 
+#reset {
+    background-color: #c91400;
+}
